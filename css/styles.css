@@ -105,8 +105,7 @@ address {
 }
 
 .button:focus {
-  color: #404BBF; 
-  outline: none; 
+    background-color: #404BBF;
 }
 
 
