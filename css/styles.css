@@ -32,7 +32,7 @@ address {
   letter-spacing: 0.03em
 }
 
-.span-class {
+.logo-dark {
   color: #2e2f42;
 }
 
@@ -90,7 +90,6 @@ address {
 
 .button { 
   background-color: #4D5AE5;
-  cursor: pointer;
 }
 
 .button-text {
@@ -128,7 +127,7 @@ address {
   text-transform: capitalize;
 }
 
-.Header-three {
+.header-three {
   font-weight: 500;
   font-size: 20px;
   text-align: left;
@@ -146,9 +145,11 @@ address {
 
 .team-section {
   background-color: #F4F4FD;
- 
-}
+ }
 
+ .fon {
+  background-color: #FFFFFF 
+ }
 .team {
   color: #2e2f42;
   font-size: 36px;
