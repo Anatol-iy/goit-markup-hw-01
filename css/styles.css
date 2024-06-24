@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap');
 
 :root {
   --NAVY-BLUE: #2e2f42;
   --SLATE: #434455;
 }
 
-.body {
+body {
   font-family: Roboto, sans-serif;
   background-color: #FFFFFF;
-  color: var(--NAVY-BLUE);
+  color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -39,6 +38,11 @@ address {
   letter-spacing: 0.03em
 }
 
+.span-class {
+  color: var(--NAVY-BLUE);
+}
+
+
 
 .nav-menu-item {
   font-size: 16px;
@@ -62,29 +66,23 @@ address {
 
 .contacts-link:hover,
 .contacts-link:focus {
-  color: #404BBF; /* Цвет текста при наведении и фокусе */
-  outline: none; /* Убираем стандартное подчеркивание фокуса */
-  
-}
+  color: #404BBF; 
+  outline: none; 
+  }
 
 .nav-menu-link:hover {
-  color: #404BBF; /* Цвет текста при наведении */
-  
-}
+  color: #404BBF; 
+  }
 
 .nav-menu-link:focus {
-  color: #404BBF; /* Цвет текста при фокусе */
-  
-}
+  color: #404BBF; 
+  }
 
 .nav-menu-item.active .nav-menu-link,
 .nav-menu-link:active {
   text-decoration: underline;
   color: #404BBF; 
 }
-
-
-
 
 .button { 
   background-color: #4D5AE5;
@@ -93,6 +91,7 @@ address {
 }
 
 .button-text {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -102,6 +101,11 @@ address {
 
 .button:hover {
   background-color: #404BBF;
+}
+
+.button:focus {
+  color: #404BBF; 
+  outline: none; 
 }
 
 
@@ -118,10 +122,12 @@ address {
 }
 
 .header-2 {
+  color: var(--NAVY-BLUE);
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.11;
+  line-height: 1.2;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .Header3 {
@@ -142,9 +148,11 @@ address {
 }
 
 .team {
+  color: var(--NAVY-BLUE);
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
+  text-transform: capitalize;
   text-align: center;
 }
 
