@@ -90,9 +90,6 @@ address {
 
 .button { 
   background-color: #4D5AE5;
-}
-
-.button-text {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -100,6 +97,7 @@ address {
   letter-spacing: 0.04em;
   text-align: left;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .button:hover {
