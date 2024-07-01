@@ -179,7 +179,6 @@ ol {
 
 .about-us-item {
   box-sizing: border-box;
-  margin-right: 24px; 
   width: calc((100% - 72px) / 4);
 }
 
@@ -274,8 +273,6 @@ ol {
 
 .portfolio-list-item {
   text-align: center;
-  margin-right: 24px;
-  margin-bottom: 48px;
   width: calc((100% - 48px) / 3);  
 }
 
