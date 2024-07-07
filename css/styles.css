@@ -1,6 +1,6 @@
 :root {
   --main-bg-color: #4d5ae5;
-  --icon-fill-color: #f4f4fd; 
+  --icon-fill-color: #f4f4fd;
 }
 
 body {
@@ -94,6 +94,7 @@ ol {
 .current {
   position: relative;
   color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current::after {
   content: '';
@@ -326,7 +327,7 @@ ol {
   border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .icon-team {
