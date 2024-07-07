@@ -337,11 +337,11 @@ ol {
   fill: var(--icon-fill-color);
 }
 .social-link:hover {
-  background-color: #404bbf;
+  background-color: #31d0aa;;
 }
 
 .social-link:focus {
-  background-color: #404bbf;
+  background-color: #31d0aa;;
 }
 
 .social-link-item {
@@ -364,6 +364,21 @@ ol {
 .portfolio-list-item {
   text-align: center;
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавний перехід для тіні */
+  box-shadow: 0px 1px 1px rgba(46, 47, 66, 0.16); /* Початкова тінь */
+}
+
+.portfolio-list-item:hover {  
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-list-item:hover .portfolio-text {
+  transform: translateY(0%);
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
 }
 
 .portfolio-list-item:nth-child(3n) {
@@ -457,8 +472,8 @@ display: flex;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-links .social-link:hover,
-.social-links .social-link:focus {
+.footer-link:hover,
+.footer-link:focus {
   background-color: #31d0aa;
 }
 
