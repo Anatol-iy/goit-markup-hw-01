@@ -315,6 +315,7 @@ ol {
   font-weight: 400;
   text-align: center;
   color: #434455;
+  padding-bottom: 8px;
 }
 
 .social-links {
@@ -374,7 +375,11 @@ ol {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-list-item:hover .portfolio-text {
+.portfolio-list-item:hover {
+  transform: translateY(0%);
+}
+
+.portfolio-list-item:hover .description-text {
   transform: translateY(0%);
 }
 
