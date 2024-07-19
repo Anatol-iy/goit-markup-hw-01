@@ -4,6 +4,8 @@
   --third-bg-color: #ffffff;
   --modal-text-color: #2E2F42;
   --form-label-color:  #8e8f99;
+  --label-checkbox-color: #8e8f99;
+  --background-color-checked: #404bbf;
 }
 
 body {
@@ -535,7 +537,7 @@ ol {
   gap: 24px;
 }
 
-.form-input {
+.footer-form-input {
   width: 264px; 
   height: 40px;
   border: 1px solid #ffffff;
@@ -698,3 +700,83 @@ ol {
   fill: #4D5AE5;
 }
 
+.form-group-comment {
+  margin-bottom: 16px;
+}
+
+.form-textarea-comment {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17; 
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px; 
+  background-color: transparent; 
+  padding: 8px 16px; 
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}
+
+.form-textarea-comment:focus {
+  border-color: #4D5AE5;
+  outline: none;
+}
+
+.checkbox-container {
+  margin-bottom: 24px;
+
+}
+
+.label-checkbox {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em; 
+  color: var(--label-checkbox-color);
+  
+}
+
+.span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px; 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+              border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+              fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  fill: transparent;
+  margin-right: 8px; 
+}
+
+.input-checkbox:checked + .label-checkbox .span {
+  background-color: var(--background-color-checked); 
+  border: none; 
+  fill: var(--icon-fill-color); 
+}
+
+.privacy-link {
+  color: var(--main-bg-color);
+}
+
+.form-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #4D5AE5;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 24px auto 0; 
+
+}
